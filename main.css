@@ -1,8 +1,168 @@
-/* Styles for Product Page Customization */
-/* NOTE: Do not edit the Bootstrap CSS files. */
-
-body {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: green;
+/* Common styles */
+body{
+    font-size:12px;
+    font-family:Arial, Helvetica;
+    background:#fff;    
+    margin:0;
+    padding:0;
+}
+ 
+header{
+    text-align:center;
+    padding:10px;
+}
+ 
+h3{
+    background:#fff;
+    text-transform:uppercase;
+    text-align:center;
+    margin: 0;
+    padding: 5px 0;
+}
+ 
+.btn {
+    color:#2E7DB3;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;   
+    background: #fff;
+    border:solid 1px #2E7DB3 ;
+}
+ 
+.btn:hover,.btn:active {
+    background: #519ED4;
+    color:#fff;
+}
+ 
+/* navigation*/
+nav{
+    background:#ABC9DC;
+    overflow:hidden;    
+}
+     
+nav ul{
+    float:left;
+}
+ 
+nav ul.social{
+    float:right;
+}
+ 
+nav ul.social li a{
+    background:url("icon.png") no-repeat;
+    width:40px;
+    height:40px;
+    display:inline-block;   
+    text-decoration:none;
+    margin:0 10px;
+    padding:0;
+}
+ 
+nav ul li,.features ul li{
+    list-style:none;
+    float:left;
+}
+ 
+nav ul.main-nav li a,.features ul li a{
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px;
+    color:#2E7DB3;
+    font-weight:bold;
+}
+ 
+nav ul.main-nav li a:hover{
+    background:#fff;
+    border-radius:3px;
+}
+ 
+/* video*/
+ 
+.video{
+    background:#BDEFD2;
+    text-align:center;
+}
+     
+.buy-now{
+    text-align:center;
+    background:#ABC9DC;
+}
+ 
+/* Features*/
+ 
+.features{
+    background:#F7EFD6;
+    padding:0 0 20px 0;
+}
+ 
+.features ul{
+    overflow:hidden;
+    width: 500px;
+    margin:20px auto;
+    clear:both;
+}
+ 
+.features ul li a{
+    background:url("icon.png") no-repeat;
+    width:40px;
+    height:40px;
+    display:inline-block;   
+    text-decoration:none;
+    margin:0 38px;
+    padding:0;
+}
+ 
+/* Testimonials*/
+ 
+.testimonials{
+    background:#ABC9DC;
+    overflow:hidden;
+}
+ 
+.testimonials div img{
+    float: left;
+    margin: 20px;
+}
+ 
+.testimonials div p{
+    float:left;
+    width:80%;
+    margin:40px 0 0 0;
+}
+ 
+.testimonials div{
+    overflow:hidden;
+}
+ 
+/* Contact Form*/
+ 
+.contact{
+    text-align:center;
+}
+ 
+.contact div{
+    padding:20px;
+}
+ 
+.contact div input,.contact div textarea{
+    width:400px;
+    padding:5px
+}
+ 
+/* Footer*/
+ 
+footer{
+    text-align:center;
+    border-top:solid 1px #000;
+    padding:20px;
+}
+ 
+footer span{
+    padding:0 40px;
 }
