@@ -6,67 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="API Super Store">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheet-->
     <link rel="stylesheet" href="main.css">
+	<!--Javascript-->
+    <script type="text/javascript" src="/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="/assets/js/testimonial-slider.js"></script>	
 </head>
 
 <body>
-<!-- Heading -->
+<!-- Logo -->
 <header>
-	<h2>API SUPER STORE</h2>
+	<a class="logo" title="API Super Store">API Super Store</a>
 </header>
 <!-- Main Navigation -->
 <nav>
 	<ul class="main-nav">
-		<li><a href="#" title="">Overview</a></li>
-		<li><a href="#features" title="">Features</a></li>
-		<li><a href="#testimonials" title="">Testimonials</a></li>
-		<li><a href="#contact" title="">Contact</a></li>
+		<li><a href="#" title="Overview">Overview</a></li>
+		<li><a href="#features" title="Features">Features</a></li>
+		<li><a href="#testimonials" title="Testimonials">Testimonials</a></li>
+		<li><a href="#contact" title="Contact">Contact</a></li>
 	</ul>
 	<!-- Link to Social Media -->
 	<ul class="social">
-		<li><a href="#" title="">&nbsp;</a></li>
-		<li><a href="#" title="">&nbsp;</a></li>
-		<li><a href="#" title="">&nbsp;</a></li>
+		<li class="fb"><a href="#" title="Share on facebook">&nbsp;</a></li>
+		<li class="instagaram"><a href="#" title="Share on Instagram">&nbsp;</a></li>
+		<li class="googleplus"><a href="#" title="Share on Google+">&nbsp;</a></li>
 	</ul>
 </nav>
 <!-- Main Content -->
 <div class="container">
 	<!-- Video -->
 	<div class="video">
-		<video width="620" height="440" controls>
-			<source src="movie.mp4" type="video/mp4">
-			<source src="movie.ogg" type="video/ogg">
-			Your browser does not support the video tag.
-		</video>
+		<iframe width="420" height="315" src="http://www.youtube.com/embed/L48g1ZWLMdo?autoplay=1"></iframe>
 	</div>
 	<!-- Buy Now -->
 	<div class="buy-now">
-		<button type="button" class="btn btn-1 btn-1a">Click Me!</button>
+		<button type="button" class="btn btn-1 btn-1a">Buy Now</button>
 	</div>
 	<!-- Features -->
 	<div class="features">
 		<h3>Features</h3>
 		<ul>
-				<li><a href="#" title="">&nbsp;</a></li>
-				<li><a href="#" title="">&nbsp;</a></li>
-				<li><a href="#" title="">&nbsp;</a></li>
-				<li><a href="#" title="">&nbsp;</a></li>
+				<li class="certified"><a href="#" title="Certified">&nbsp;</a></li>
+				<li class="download"><a href="#" title="Download">&nbsp;</a></li>
+				<li class="one-click"><a href="#" title="One Click">&nbsp;</a></li>
+				<li class="time"><a href="#" title="Time">&nbsp;</a></li>
 		</ul>
-		<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+		<div> The API Superstore are certified for Windows, Mac, Android 4.0+ and Apple iOS 6.0+ developemnt platforms. Unlimited download from over 50,000 API's with 1-click installation. From e-commerce to interactive maps. The API Superstore saves you</div>
 	</div>
 	<!-- Testimonials -->
 	<div class="testimonials">
 		<h3>Testimonials</h3>
-			<div>
-				<img src="test.png"/>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-			</div>
-			<div>
-				<img src="test.png"/>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p></div>
-			<div>
-				<img src="test.png"/>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p></div>
+		
+   <div id="sliderContainer">
+    <div id="prev" class="arrow"></div>
+    <div id="slider">
+      <div class="slide">        
+        <img src="/assets/images/testimonial-1.jpg">
+		<div class="slideCopy">
+          <p>This is the Best Website that i have used in the past 5 years! Keep up the good work.<br/><br/>Jon Smith - Zeekwire</p>
+        </div> </div>
+      <div class="slide">
+	  <img src="/assets/images/testimonial-2.jpg"> 
+        <div class="slideCopy">
+          <p>The API Superstore team has created super easy to use interface for app browsing and all are free<br/><br/>Jane Joe - Hanger App</p>
+        </div>
+        </div>
+      <div class="slide">  
+	  <img src="/assets/images/testimonial-3.jpg"> 
+        <div class="slideCopy">
+          <p>If you are a startup,I would high recommended that you sign up for this service! It works great and it's affordable! <br/><br/>
+		  Taylor Keen - The Startup Store</p>
+        </div>
+      </div>
+    </div>
+    <div id="pagination"></div>
+    <div id="next" class="arrow"></div>
+  </div>
 	</div>
 	<!-- Contact Form -->
 	<div class="contact">
@@ -81,7 +97,7 @@
 				<div>
 					<textarea type="text" name="Message" value="Message" rows="10" cols="100" ></textarea>
 				</div>
-				<button type="button" class="btn btn-1 btn-1a">Button</button>
+				<button type="button" class="btn btn-1 btn-1a">Submit</button>
 			</form>
 	</div>
 	<!-- Footer -->
@@ -93,4 +109,3 @@
 </div>
 </body>
 </html>
-
